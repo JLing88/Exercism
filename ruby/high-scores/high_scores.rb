@@ -15,7 +15,7 @@ class HighScores
   end
 
   def personal_top_three
-    @scores.max_by(3) {|x| x}
+    @scores.max(3)
   end
 
 end
